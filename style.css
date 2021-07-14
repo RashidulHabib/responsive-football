@@ -1,0 +1,113 @@
+/* google font import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+:root {
+  --color-white: #ffffff;
+  --color-button-back: #e02c6d;
+}
+
+/* common style */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+/* Fast part style */
+.head-container {
+  background-color: #2d25a0;
+}
+/* navigation */
+nav li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 16px;
+}
+nav > ul {
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 126px 42px 156px;
+}
+/* common use  */
+button {
+  color: var(--color-white);
+  background-color: var(--color-button-back);
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 24px;
+
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms ease;
+}
+button:hover {
+  transform: scale(1.5);
+}
+.heading {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 114px;
+  justify-content: center;
+}
+.head-title {
+  font-size: 40px;
+  color: var(--color-white);
+  /* 
+  margin-left: 114px;
+  margin-bottom: 270px; */
+  margin-top: calc(nav - 177px);
+  margin-bottom: 57px;
+  margin-left: 114px;
+}
+
+.head-banner img {
+  width: 556.01px;
+  height: 438px;
+  margin-bottom: 86px;
+  transition: transform 600ms ease-in;
+}
+.head-banner img:hover {
+  transform: scale(1.1);
+}
+
+/* second part. player card */
+.player-container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center; */
+  margin: 70px 210px 165px 180px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.player-banner img {
+  width: 300px;
+  height: 256px;
+}
+.player {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 27px;
+}
+.player-title {
+  font-size: 28px;
+  text-align: inherit;
+}
+.p-detail {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 50px;
+}
